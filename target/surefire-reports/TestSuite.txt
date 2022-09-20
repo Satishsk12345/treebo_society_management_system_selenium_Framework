@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 1, Errors: 0, Skipped: 1, Time elapsed: 32.419 sec <<< FAILURE!
+step1Test(org.treebo.practice.MavenPractice2Test)  Time elapsed: 0.022 sec  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "String.hashCode()" because "browser" is null
+	at treebo.genericUtility.WebDriverUtility.launchBrowser(WebDriverUtility.java:29)
+	at treebo.genericUtility.WebDriverUtility.openBrowserWithApplication(WebDriverUtility.java:70)
+	at org.treebo.practice.MavenPractice2Test.step1Test(MavenPractice2Test.java:20)
+

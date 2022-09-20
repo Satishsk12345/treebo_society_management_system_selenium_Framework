@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Command line suite]" verbose="0">
+  <test name="Command line test(failed)">
+    <classes>
+      <class name="org.treebo.practice.MavenPractice2Test">
+        <methods>
+          <include name="step1Test"/>
+        </methods>
+      </class> <!-- org.treebo.practice.MavenPractice2Test -->
+      <class name="org.treebo.practice.Tc_AutomateTest">
+        <methods>
+          <include name="classSetUp"/>
+          <include name="methodTearDown"/>
+        </methods>
+      </class> <!-- org.treebo.practice.Tc_AutomateTest -->
+      <class name="org.treebo.practice.TC_3Test">
+        <methods>
+          <include name="classSetUp"/>
+          <include name="methodTearDown"/>
+        </methods>
+      </class> <!-- org.treebo.practice.TC_3Test -->
+      <class name="org.treebo.practice.TC_4Test">
+        <methods>
+          <include name="classSetUp"/>
+          <include name="methodTearDown"/>
+        </methods>
+      </class> <!-- org.treebo.practice.TC_4Test -->
+      <class name="org.treebo.practice.TestNGPractice1Test">
+        <methods>
+          <include name="step1Test"/>
+        </methods>
+      </class> <!-- org.treebo.practice.TestNGPractice1Test -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [Command line suite] -->

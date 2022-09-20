@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results total="5" passed="3" failed="1" skipped="1">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-09-20T07:38:34Z" name="Command line suite" finished-at="2022-09-20T07:39:06Z" duration-ms="31702">
+    <groups>
+      <group name="regression">
+        <method signature="Tc_AutomateTest.tc_automate()[pri:0, instance:org.treebo.practice.Tc_AutomateTest@69a10787]" name="tc_automate" class="org.treebo.practice.Tc_AutomateTest"/>
+      </group> <!-- regression -->
+      <group name="sanity">
+        <method signature="MavenPractice2Test.step1Test()[pri:0, instance:org.treebo.practice.MavenPractice2Test@290dbf45]" name="step1Test" class="org.treebo.practice.MavenPractice2Test"/>
+        <method signature="TC_3Test.tc_3()[pri:0, instance:org.treebo.practice.TC_3Test@12028586]" name="tc_3" class="org.treebo.practice.TC_3Test"/>
+      </group> <!-- sanity -->
+    </groups>
+    <test started-at="2022-09-20T07:38:34Z" name="Command line test" finished-at="2022-09-20T07:39:06Z" duration-ms="31702">
+      <class name="org.treebo.practice.TC_4Test">
+        <test-method is-config="true" signature="classSetUp()[pri:0, instance:org.treebo.practice.TC_4Test@17776a8]" started-at="2022-09-20T13:08:46Z" name="classSetUp" finished-at="2022-09-20T13:08:50Z" duration-ms="4293" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- classSetUp -->
+        <test-method signature="tc_4()[pri:0, instance:org.treebo.practice.TC_4Test@17776a8]" started-at="2022-09-20T13:08:50Z" name="tc_4" finished-at="2022-09-20T13:08:55Z" duration-ms="5593" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc_4 -->
+        <test-method is-config="true" signature="methodTearDown()[pri:0, instance:org.treebo.practice.TC_4Test@17776a8]" started-at="2022-09-20T13:08:55Z" name="methodTearDown" finished-at="2022-09-20T13:08:56Z" duration-ms="354" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- methodTearDown -->
+      </class> <!-- org.treebo.practice.TC_4Test -->
+      <class name="org.treebo.practice.TestNGPractice1Test">
+        <test-method signature="step1Test(java.lang.String, java.lang.String)[pri:0, instance:org.treebo.practice.TestNGPractice1Test@2d127a61]" started-at="2022-09-20T13:09:06Z" name="step1Test" data-provider="getData" finished-at="2022-09-20T13:09:06Z" duration-ms="0" status="SKIP">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.apache.poi.ss.usermodel.Workbook.getSheet(String)" because "this.workBook" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: java.lang.NullPointerException: Cannot invoke "org.apache.poi.ss.usermodel.Workbook.getSheet(String)" because "this.workBook" is null
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:162)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:430)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1270)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:985)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1075)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.run(TestNG.java:1024)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: java.lang.NullPointerException: Cannot invoke "org.apache.poi.ss.usermodel.Workbook.getSheet(String)" because "this.workBook" is null
+	at treebo.genericUtility.ExcelUtility.getMultipleData(ExcelUtility.java:87)
+	at org.treebo.practice.TestNGPractice1Test.getData(TestNGPractice1Test.java:24)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:136)
+	... 30 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- step1Test -->
+      </class> <!-- org.treebo.practice.TestNGPractice1Test -->
+      <class name="org.treebo.practice.Tc_AutomateTest">
+        <test-method is-config="true" signature="classSetUp()[pri:0, instance:org.treebo.practice.Tc_AutomateTest@69a10787]" started-at="2022-09-20T13:08:56Z" name="classSetUp" finished-at="2022-09-20T13:09:00Z" duration-ms="4157" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- classSetUp -->
+        <test-method signature="tc_automate()[pri:0, instance:org.treebo.practice.Tc_AutomateTest@69a10787]" started-at="2022-09-20T13:09:00Z" name="tc_automate" finished-at="2022-09-20T13:09:05Z" duration-ms="5537" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc_automate -->
+        <test-method is-config="true" signature="methodTearDown()[pri:0, instance:org.treebo.practice.Tc_AutomateTest@69a10787]" started-at="2022-09-20T13:09:05Z" name="methodTearDown" finished-at="2022-09-20T13:09:06Z" duration-ms="336" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- methodTearDown -->
+      </class> <!-- org.treebo.practice.Tc_AutomateTest -->
+      <class name="org.treebo.practice.TC_3Test">
+        <test-method is-config="true" signature="classSetUp()[pri:0, instance:org.treebo.practice.TC_3Test@12028586]" started-at="2022-09-20T13:08:34Z" name="classSetUp" finished-at="2022-09-20T13:08:40Z" duration-ms="6015" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- classSetUp -->
+        <test-method signature="tc_3()[pri:0, instance:org.treebo.practice.TC_3Test@12028586]" started-at="2022-09-20T13:08:40Z" name="tc_3" finished-at="2022-09-20T13:08:45Z" duration-ms="5005" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc_3 -->
+        <test-method is-config="true" signature="methodTearDown()[pri:0, instance:org.treebo.practice.TC_3Test@12028586]" started-at="2022-09-20T13:08:45Z" name="methodTearDown" finished-at="2022-09-20T13:08:46Z" duration-ms="357" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- methodTearDown -->
+      </class> <!-- org.treebo.practice.TC_3Test -->
+      <class name="org.treebo.practice.MavenPractice2Test">
+        <test-method signature="step1Test()[pri:0, instance:org.treebo.practice.MavenPractice2Test@290dbf45]" started-at="2022-09-20T13:08:34Z" name="step1Test" finished-at="2022-09-20T13:08:34Z" duration-ms="16" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "String.hashCode()" because "browser" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "String.hashCode()" because "browser" is null
+	at treebo.genericUtility.WebDriverUtility.launchBrowser(WebDriverUtility.java:29)
+	at treebo.genericUtility.WebDriverUtility.openBrowserWithApplication(WebDriverUtility.java:70)
+	at org.treebo.practice.MavenPractice2Test.step1Test(MavenPractice2Test.java:20)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.run(TestNG.java:1024)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- step1Test -->
+      </class> <!-- org.treebo.practice.MavenPractice2Test -->
+    </test> <!-- Command line test -->
+  </suite> <!-- Command line suite -->
+</testng-results>
