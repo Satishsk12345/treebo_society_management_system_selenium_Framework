@@ -30,6 +30,13 @@ public class BaseClass {
 	 * @throws IOException
 	 * 
 	 */
+	
+	
+	//SATISH
+	
+	
+	
+	
 	@BeforeClass(groups = "baseclass")
 	public void classSetUp() throws IOException {
 
